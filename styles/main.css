@@ -1,0 +1,25 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   color: #242625;
+   }
+ 
+   nav{
+   background-color: #edf9f1;
+   }
+
+  .main-container {
+	font-size: 16px;
+	padding: 20px;
+	margin: 20px 0px;
+     }
+
+   .main_container {
+	   background-color: #c7ccca;
+   }
+ 
+   .main_container p {
+	   color: #33c480;
+   }
+
