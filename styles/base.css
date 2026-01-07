@@ -166,3 +166,49 @@ transform: scaleX(1);
     border-radius: 10px;
 }
 
+.outter-contact-area {
+position: relative;
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding: 40px 120px;
+background-attachment: red;
+}
+
+.contact-area{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 16px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 1.3em;
+    color: #3e3e3f;
+}
+
+input, select, textarea {
+    padding: 10px;
+    margin-top: 8px;
+    border-radius: 8px;
+    border: 1px solid;
+}
+
+input:hover, textarea:hover {
+    border: 2px solid red;
+    outline: none;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
