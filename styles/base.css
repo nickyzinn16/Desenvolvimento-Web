@@ -24,9 +24,6 @@
     grid-area: main;
 }
 
-.aside {
-    grid-area: aside;
-}
 
 .footer {
     grid-area: footer;
@@ -81,7 +78,7 @@ color: #313b31;
 transform: scaleX(1);
 }
 
-.banner{
+.banner {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -93,7 +90,7 @@ transform: scaleX(1);
     background-repeat: no-repeat;
     text-align: center;
     color: white;
-    padding: 20px;
+    padding: 0px;
     position: relative;
 }
 
@@ -142,8 +139,16 @@ transform: scaleX(1);
     color: #2e2e2e;
 }
 
-.outter-course-description p {
+.outter-contact-area h1 {
+    text-decoration: underline;
     color: #2e2e2e;
+    text-align: center;
+    justify-content: center;
+    font-size: 43px;
+}
+
+.outter-course-description p {
+    color: black;
     font-size: 19px;
     line-height: 1.9;
     word-spacing: 4px;
@@ -173,6 +178,7 @@ flex-direction: column;
 justify-content: center;
 padding: 40px 120px;
 background-attachment: red;
+align-items: center;
 }
 
 .contact-area{
@@ -193,14 +199,26 @@ label {
     margin-top: 15px;
     font-weight: bold;
     font-size: 1.3em;
-    color: #3e3e3f;
+    color: #2e2e2e;
+}
+
+button {
+    margin-top: 18px;
+    background-color: darkblue;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    width: 350px;
+    height: 50px;
+    border-radius: 5px;
 }
 
 input, select, textarea {
     padding: 10px;
     margin-top: 8px;
     border-radius: 8px;
-    border: 1px solid;
+    border: 1px solid #2e2e2e;
+    width: 100%;
 }
 
 input:hover, textarea:hover {
@@ -211,4 +229,63 @@ input:hover, textarea:hover {
 form div {
     display: flex;
     flex-direction: column;
+}
+
+.contact-info ul li {
+    padding: 12px 12px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    list-style: none;
+}
+
+.contact-info {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 21px;
+    font-weight: bold;
+    color: #2e2e2e;
+    margin-right: 80px;
+    height: 450px;
+}
+
+.contact-info ul li:hover {
+    background-color: grey;
+}
+
+.outter-course-description img {
+    align-items: left;
+}
+
+.tabela {
+    margin-left: 25%;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid darkolivegreen;
+    width: 120px;
+}
+
+th {
+    background-color: darkblue;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+background-color: #f2f2f2;
+}
+
+ table {
+    width: 100%;
+    table-layout: fixed;
 }

@@ -11,109 +11,167 @@
     <body>
         <div class="grid-container">
 
-            <!-- header -->
-            <header class="header">
-                <nav class="navbar">
+                <!-- header -->
+                <header class="header">
+                    <nav class="navbar">
 
-                    <div class="logo">
-                        <img width="120" alt="Logo do Curso" src="./resources/images/logo.png" />
-                    </div>
+                        <div class="logo">
+                            <img width="120" alt="Logo do Curso" src="./resources/images/logo.png" />
+                        </div>
 
-                    <div class="menu">
-                        <ul>
-                            <li class="link-holder"><a href="./">Home</a></li>
-                            <li class="link-holder"><i class="fa-solid fa-phone"></i><a href="./contatos.html">Contactos</a></li>
-                            <li class="link-holder"><i class="fa-solid fa-book"></i><a href="./modulos.html">Modulos</a></li>
-                            <li class="link-holder"><i class="fa-solid fa-brush"></i><a href="./dinamicas.html">Dinamicas</a></li>
-                            <li class="link-holder"><i class="fa-solid fa-chalkboard-user"></i><a href="./professores.html">Professores</a></li>
-                        </ul>
-                    </div>
-                </nav>
+                        <div class="menu">
+                            <ul>
+                                <li class="link-holder"><a href="./">Home</a></li>
+                                <li class="link-holder"><i class="fa-solid fa-phone"></i><a href="./contatos.html">Contactos</a></li>
+                                <li class="link-holder"><i class="fa-solid fa-book"></i><a href="./modulos.html">Modulos</a></li>
+                                <li class="link-holder"><i class="fa-solid fa-brush"></i><a href="./dinamicas.html">Dinamicas</a></li>
+                                <li class="link-holder"><i class="fa-solid fa-chalkboard-user"></i><a href="./professores.html">Professores</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </header>
+
+            
+            <!-- banner -->
+            <header class="banner">
+                <div class="main-banner">
+                    <h1>Seja Bem Vindo ao site web Do Curso</h1>
+                    <p>Administração de Sistemas e Bases de Dados</p>
+                </div>
             </header>
+
+            <!-- main content -->
+            <main class="main">
+                <section class="outter-course-description">
+                    <div>
+                        <h1>Descrição Geral</h1>
+                    </div>
+                
+                    <div>
+                        <img src="./resources/images/banner7.jpg">
+                        <p>
+                            O curso de Administração de Sistemas Informáticos e Bases de Dados (ASIBD) forma profissionais capazes de conceber, desenvolver e gerir sistemas informáticos complexos, combinando uma forte base em matemática, eletrónica e programação com competências práticas em software, redes e segurança. Ao longo da formação, os estudantes aprendem a analisar problemas reais e a criar soluções tecnológicas inovadoras, desde aplicações móveis e sistemas embebidos até infraestruturas de rede e plataformas web.
+
+                            Além da componente técnica, o curso promove o pensamento crítico, o trabalho em equipa e a capacidade de adaptação a novas tecnologias, preparando os futuros engenheiros para enfrentar os desafios de um setor em constante evolução. A formação inclui projetos práticos, estágio profissional e contacto direto com ferramentas e metodologias utilizadas na indústria.
+
+                            No final, os diplomados estão aptos a atuar em diversas áreas da informática, como desenvolvimento de software, cibersegurança, inteligência artificial, sistemas distribuídos ou administração de redes. Trata-se de um curso exigente, mas recompensador, ideal para quem tem curiosidade, gosto pela tecnologia e vontade de criar soluções que impactem positivamente o mundo digital.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="outter-contact-area">
+                    <!--Titulo-->
+                    <div class="description-title">
+                        <h1>Contactos</h1>
+                    </div>
+
+                    <div class="contact-area">
+                    <!--Area de contactos-->
+                        <div class="contact-info">
+                            <ul>
+                                <li><i class="fa-solid fa-phone"></i>+238 232-13-13</li>
+                                <li><i class="fa-solid fa-message"></i>asibd.eicm@gmail.com</li>
+                                <li><i class="fa-solid fa-sitemap"></i>https://asibd.eicmgdc.edu.cv</li>
+                                <li><i class="fa-solid fa-earth-africa"></i>Cabo Verde - São Vicente - Mindelo - Av. Dr. Alberto Leite</li>
+                            </ul>
+                        </div>
+
+                        <!--Area de formulario-->
+                            <form action="contactos.php">
+                                <div>
+                                    <label for="name">Nome:</label>
+                                    <input required type="text" name="name">
+                                </div>
+
+                                <div>
+                                    <label for="email">Email:</label>
+                                    <input required type="email" name="email">
+                                </div>
+
+                                <div>
+                                    <label for="subject">Assunto:</label>
+                                    <input required type="text" name="subject">
+                                </div>
+
+                                <div>
+                                    <label for="message">Mensagem:</label>
+                                    <textarea name="message" id="message"></textarea>
+                                </div>
+
+                                <div>
+                                    <button type="submit">Enviar</button>
+                                </div>
+                            </form>
+                    </div>
+                </section>
+            </main>
+
+      <section class="tabela">
+				<div>
+					<div>
+						<h2>Horario do Ano Letivo 2025/2026</h2>
+					</div>
+
+					<table>
+						<thead>
+							<tr>
+								<th>Horas</th>
+								<th>Segunda</th>
+								<th>Terca</th>
+								<th>Quarta</th>
+								<th>Quinta</th>
+								<th>Sexta</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>07:30 - 08:20</td>
+								<td>Mat</td>
+								<td>Code</td>
+								<td>LP</td>
+								<td>Mat</td>
+								<td>------</td>
+							</tr>
+							<tr>
+								<td>08:30 - 09:20</td>
+								<td>F</td>
+								<td>Code</td>
+								<td>LF</td>
+								<td>Mat</td>
+								<td>LP</td>
+							</tr>
+							<tr>
+								<td>09:30 - 10:20</td>
+								<td>F</td>
+								<td>LP</td>
+								<td>Mat</td>
+								<td>LI</td>
+								<td>F</td>
+							</tr>
+							<tr>
+								<td>10:40 - 11:30</td>
+								<td>LF</td>
+								<td>LI</td>
+								<td>------</td>
+								<td>------</td>
+								<td>------</td>
+							</tr>
+							
+						</tbody>
+					</table>
+				</div>
+			</section>
+
+
+            <!-- aside -->
+            <aside class="aside">
+            </aside>
+
+            <!-- footer -->
+            <footer class="footer">
+            </footer>
         </div>
 
-        
-        <!-- banner -->
-        <header class="banner">
-            <div class="main-banner">
-                <h1>Seja Bem Vindo ao site web Do Curso</h1>
-                <p>Administração de Sistemas e Bases de Dados</p>
-            </div>
-        </header>
-
-        <!-- main content -->
-        <main class="main">
-            <section class="outter-course-description">
-                <div>
-                    <h1>Descrição Geral</h1>
-                </div>
-            
-                <div>
-                    <img src="./resources/images/banner7.jpg">
-                    <p>
-                        O curso de Administração de Sistemas Informáticos e Bases de Dados (ASIBD) forma profissionais capazes de conceber, desenvolver e gerir sistemas informáticos complexos, combinando uma forte base em matemática, eletrónica e programação com competências práticas em software, redes e segurança. Ao longo da formação, os estudantes aprendem a analisar problemas reais e a criar soluções tecnológicas inovadoras, desde aplicações móveis e sistemas embebidos até infraestruturas de rede e plataformas web.
-
-                        Além da componente técnica, o curso promove o pensamento crítico, o trabalho em equipa e a capacidade de adaptação a novas tecnologias, preparando os futuros engenheiros para enfrentar os desafios de um setor em constante evolução. A formação inclui projetos práticos, estágio profissional e contacto direto com ferramentas e metodologias utilizadas na indústria.
-
-                        No final, os diplomados estão aptos a atuar em diversas áreas da informática, como desenvolvimento de software, cibersegurança, inteligência artificial, sistemas distribuídos ou administração de redes. Trata-se de um curso exigente, mas recompensador, ideal para quem tem curiosidade, gosto pela tecnologia e vontade de criar soluções que impactem positivamente o mundo digital.
-                    </p>
-                </div>
-            </section>
-
-            <section class="outter-contact-area">
-                <!--Titulo-->
-                <div class="description-title">
-                    <h1>Contactos</h1>
-                </div>
-
-                <div>
-                    <!--Area de contatos-->
-                    <div>
-                        <ul>
-                            <li><span>+238 232-13-13</span></li>
-                            <li><span>asibd.eicm@gmail.com</span></li>
-                            <li><span>https://asibd.eicmgdc.edu.cv</span></li>
-                            <li><span>Cabo Verde - Sao Vicente - Mindelo-Av Dr. Aberto Leite</span></li>
-                        </ul>
-                    </div>
-
-                    <!--Area de formulario-->
-                        <form action="contactos.php">
-                            <div>
-                                <label for="name">Nome:</label>
-                                <input required type="text" name="name">
-                            </div>
-
-                            <div>
-                                <label for="email">Email:</label>
-                                <input required type="email" name="email">
-                            </div>
-
-                            <div>
-                                <label for="subject">Assunto:</label>
-                                <input required type="text" name="subject">
-                            </div>
-
-                            <div>
-                                <label for="message">Mensagem:</label>
-                                <textarea name="message" id="message">Insira sua mensagem</textarea>
-                            </div>
-
-                            <div>
-                                <button type="submit">Enviar</button>
-                            </div>
-                        </form>
-                </div>
-            </section>
-        </main>
-
-        <!-- aside -->
-        <aside class="aside">
-        </aside>
-
-        <!-- footer -->
-        <footer class="footer">
-        </footer>
     </body>
 </html>
 
