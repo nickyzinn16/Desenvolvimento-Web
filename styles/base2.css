@@ -1,0 +1,78 @@
+.main-banner h1 {
+font-weight: bold;
+    text-align: justify;
+    word-spacing: 4px;
+    font-size: 60px;
+    margin-top: 10px;
+    margin-left: 500px;
+    text-decoration: underline;
+    color: #2e2e2e;
+}
+
+.description-professors {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-attachment: red;
+    text-align: justify;
+    word-spacing: 4px;
+    font-size: 20px;
+}
+
+.description-professors p {
+    color: #2e2e2e;
+    font-size: 21px;
+    line-height: 1.9;
+    word-spacing: 10px;
+    letter-spacing: 0.4px;
+    text-align: justify;
+    font-weight: bold;
+}
+
+.description-professors div {
+    display: flex;
+}
+
+.description-professors img {
+    margin-right: 25px;
+    height: 330px;
+    width: 400px;
+    box-shadow: 2px grey;
+    position: relative;
+    top: 27px;
+    box-shadow: 3px 3px 5px black;
+    border-radius: 10px;
+}
+
+.apresentacao-profs img {
+    margin-right: 25px;
+    height: 240px;
+    width: 250px;
+    box-shadow: 2px grey;
+    position: relative;
+    top: 27px;
+    box-shadow: 3px 3px 5px black;
+    border-radius: 10px;
+}
+
+.apresentacao-profs p {
+  color: #2e2e2e;
+    font-size: 21px;
+    line-height: 1.7;
+    word-spacing: 10px;
+    letter-spacing: 0.4px;
+    text-align: justify;
+    /** font-weight: bold;*/
+}
+
+.apresentacao-profs div {
+    display: flex;
+}
+
+.nome {
+    font-size: 2em;
+    font-weight: bold;
+}
+
