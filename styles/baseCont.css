@@ -1,0 +1,134 @@
+.banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-image: url("../resources/images/banner2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+    padding: 0px;
+    position: relative;
+}
+
+.banner::before {
+    content: "";
+    inset: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.main-banner {
+    position: relative;
+    z-index: 2;
+}
+
+.banner h1 {
+    color: white;
+    font-size: 4rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px #5A1935;
+}
+
+.banner p {
+    color: white;
+    font-size: 1.3rem;
+}
+
+.main-banner img {
+    display: none;
+}
+
+
+.contactos {
+    padding: 60px 120px;
+    background-color: #f5f5f5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contactos-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.contactos-info {
+    width: 40%;
+}
+
+.contactos-info h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+    text-decoration: underline;
+    color: #2e2e2e;
+}
+
+.contactos-info ul {
+    padding: 0;
+}
+
+.contactos-info ul li {
+    list-style: none;
+    padding: 15px;
+    margin-bottom: 12px;
+    background-color: white;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.contactos-info ul li:hover {
+    background-color: #dcdcdc;
+}
+
+
+.contactos-form {
+    width: 50%;
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 10px;
+}
+
+.contactos-form h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #2e2e2e;
+}
+
+.contactos-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactos-form label {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.contactos-form button {
+    margin-top: 25px;
+    height: 50px;
+    background-color: darkblue;
+    color: white;
+    font-size: 19px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.contactos-form button:hover {
+    transform: scale(1.0);
+    background-color: darkblue;
+}
+
+
+

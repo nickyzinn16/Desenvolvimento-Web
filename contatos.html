@@ -1,13 +1,56 @@
 <!DOCTYPE html>
+<html lang="pt">
+<head>
+	<link rel="stylesheet" type="text/css" href="./styles/baseCont.css">
+    <meta charset="utf-8">
+    <title>Bem-vindo</title>
+</head>
+<body>
 
-<html>
-	<head>
-	<title>Contatos do Curso</title>
-	<meta charset="utf-8">
-	</head>
+    <header class="banner">
+        <div class="main-banner">
+            <h1>Contactos</h1>
+        </div>
+    </header>
 
-	<body>
-		<h1>Pagina dos Contatos</h1>
-	</body>
-	
+<section class="contactos">
+    <div class="contactos-container">
+
+        <div class="contactos-info">
+            <h2>Contacta-nos:</h2>
+            <ul>
+                <li><strong>Email:</strong> asibd.eicm@gmail.com</li>
+                <li><strong>Telefone:</strong> +238 232 13 13</li>
+                <li><strong>Facebook:</strong> face</li>
+                <li><strong>Instagram:</strong> inst</li>
+            </ul>
+        </div>
+
+        <div class="contactos-form">
+            <form>
+                <label>Nome</label>
+                <input type="text" required>
+
+                <label>Email</label>
+                <input type="email" required>
+
+                <label>Assunto</label>
+                <select required>
+                    <option value="">selecione o assunto</option>
+                    <option>duvida</option>
+                    <option>Inscrever no curso</option>
+                    <option>Informacoes sobre o curso</option>
+                    <option>Outros</option>
+                </select>
+
+                <label>Mensagem</label>
+                <textarea required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+
+    </div>
+</section>
+</body>
 </html>

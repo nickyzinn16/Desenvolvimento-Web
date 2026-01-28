@@ -1,22 +1,11 @@
-// crie uma funcao que pede a altura e o peso da pessoa com pelomenos 5 casas decimais, 
-// realizar a operacao poara diminuir  numero de casa decimais para duas e depois calcular o imc
+let name = `Adilson Gomes`;
+let course = `ASGBD`;
+let msg = `Seja Bem Vindo`;
+let classification = 15;
 
-function calcularIMC() {
-    let altura = prompt("Insira a altura:");
-    let peso = prompt("Insira o peso:");
+let finalDatas = `Sr. ${name}, seja muito bem vindo ao curso de ${curso} seu filho teve ${classification} valores`
 
+console.log(finalDatas.charAt(4));
+console.log(finalDatas.length);
 
-    let altura2 = altura;
-    altura2.toFixed(2);
-
-    let peso2 = peso;
-    peso2.toFixed(2);
-
-    imc = peso2 / (altura2 * altura2);
-    console.log(imc)
-}
-
-calcularIMC;
-
-    
-
+imprimir todos os carateres de msg usando ciclo
