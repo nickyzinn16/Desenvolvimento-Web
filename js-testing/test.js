@@ -8,4 +8,34 @@ let finalDatas = `Sr. ${name}, seja muito bem vindo ao curso de ${curso} seu fil
 console.log(finalDatas.charAt(4));
 console.log(finalDatas.length);
 
-imprimir todos os carateres de msg usando ciclo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Recebido o nome completo do utilizador,
+ apresentar uma nova versão desse nome com as iniciais em maiúsculas. */
+
+let nomeusuario = "ricardo david bans leite dos santos";
+
+let nome = nomeusuario.split("");
+
+for (let i = 0; i < nome.length; i++) {
+    nome[i] = nome[i][0].toUpperCase() + nome[i].slice(1);
+}
+
+console.log(nome);
