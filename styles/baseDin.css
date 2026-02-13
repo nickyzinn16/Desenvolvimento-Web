@@ -1,0 +1,80 @@
+.banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 37vh;
+    background-image: url("../resources/images/banner2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+    padding: 0px;
+    position: relative;
+}
+
+.banner::before {
+    content: "";
+    inset: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.main-banner {
+    position: relative;
+    z-index: 2;
+}
+
+.banner h1 {
+    color: white;
+    font-size: 4rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px purple;
+}
+
+.description-dinamica {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-attachment: red;
+    text-align: justify;
+    word-spacing: 4px;
+    font-size: 20px;
+}
+
+.description-dinamica img {
+    margin-right: 25px;
+    height: 150px;
+    width: 200px;
+    box-shadow: 2px grey;
+    position: relative;
+    top: 27px;
+    box-shadow: 3px 3px 5px black;
+    border-radius: 10px;
+}
+
+.description-dinamica p {
+    color: #2e2e2e;
+    font-size: 21px;
+    line-height: 1.9;
+    word-spacing: 10px;
+    letter-spacing: 0.4px;
+    text-align: justify;
+    font-weight: bold;
+}
+
+.description-dinamica div {
+    display: flex;
+}
+
+.dinamica-info h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+    text-decoration: underline;
+    color: #2e2e2e;
+}

@@ -4,22 +4,6 @@ for (let i=0; i <=255; i++){
     console.log(`$(1) = ${String.fromCodePoint}`)
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 let letras = palavra.split("");
 
 let posicao = letras.indexOf(letra);

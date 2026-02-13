@@ -35,21 +35,12 @@ let alunos = [
 ];
 
 // 1.1
-function calcularMedia(notas) {
-    for (let i in notas) {
-        soma += notas[i];
-    }
-    return soma / notas.length;
-}
 
-for (let i in alunos) {
-    alunos[i].mediaNotas = calcularMedia(alunos[i].notas);
-}
-
-console.log(alunos);
-
-//1.2
-for(let i in alunos){
-if(mediaNotas(i) > 9.5)
-    console.log(`Alunos com media superior a 9,5: ${alunos}`);
+for(let i = 0; i < alunos.length; i++){
+  let soma = 0;
+  for(let j= 0; j < alunos[i].notas.length; j++){
+    soma = soma + alunos[i].notas[j];
+  }
+  let media = soma / alunos[i].notas.length;
+  alunos[i].media = media;
 }
