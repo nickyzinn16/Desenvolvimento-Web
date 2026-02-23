@@ -1,32 +1,128 @@
-<html>
-    <body>
-        <div id="menu">
-            sobre.html
-        </div>
-            <a href="#">home</a>
-            <a href="sobre.html">sobre</a>
-        </div>
-        <main>
-            <section>
-                <div></div>
-            </section>
-        </main>
-        <sricpt
-            const body = document.body;
-            const primeiroFilho = body.firstElementChild;
-            console.log(primeiroFilho.tagName); 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="menu">
+        <a href="Home.html">Home</a>
+        <a href="Sobre.html">Sobre</a>
+        <a href="Contact.html">Contactos</a>
+    </div>
+    <main>
+        <section>
+            <h2> Ola javascript </h2>
+            <div>
+                <p class="destaque">
+                    Eu sou o homem da sala. Meu caro!
+                </p>
+            </div>
+        </section>
 
-            console.log(primeiroFilho.parentNode == body); 
 
-            const primeiroDestaque = document.querySelector('p.destaque');
-ricp
-            const linksDosDados = document.querySelectorAll('#menu a');
-            console.log(linkDosDados)
 
-            linksDosDados.forEach(link => {
-            console.log(link.href);
-            });
-        </sricpt>
 
-    </body>
+
+        <section>
+            <div>
+                <button onclick="alert('Voce clicou!');">Clique Novamente</button>
+            </div>
+            <div>
+                <button id="meuBotao">Um outro botao</button>
+            </div>
+
+            <div>
+                <button id="segundoBotao">Clique aqui</button>
+            </div>
+        </section>
+            <script>
+
+                const botao = document.querySelector('#segundoBotao');
+
+                function handleClick() {
+                alert('Voce clicou em outro botao de vera')
+                }
+
+                function handleMouseOver() {
+                alert('Voce clicou em outro botao de vera')
+                }
+
+                botao.addEventListener('click', handleClick);
+                botao.addEventListener('mouseover', handleMouseOver);
+
+                
+
+                const meuBotao = document.querySelector("#meuBotao");
+                
+                meuBotao.onclick = function() {
+                        alert('Voce clicou em outro botao de vera')
+                };
+
+                const btn = document.getElementById("btn");
+                
+               
+                
+                btn.addEventListener("click", () => {
+                alert("Executando o primeiro evento!!!");
+                });
+
+                btn.addEventListener("click", (event) => {
+                alert("Executando o segundo evento!!!")
+                });
+ 
+                //faca com mais tres eventos um com double click, mouseover e mouseout
+
+                meuBotao.onmouseover = function() {
+                    meuBotao.style.backgroundColor = "blue";
+                };
+    
+                meuBotao.onmouseout = function() {
+                    meuBotao.style.backgroundColor = "red";
+                };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                const body = document.body;
+                const primeiroFilho = body.firstElementChild;
+                console.log(primeiroFilho.tagName); 
+
+                console.log(primeiroFilho.parentNode == body);
+
+                const primeiroDestaque = document.querySelector('p.destaque');
+                console.log(primeiroDestaque);
+
+                const linkDosDados = document.querySelectorAll('#menu a');
+                console.log(linkDosDados);
+
+                linkDosDados.forEach(link => {
+                console.log(link.href)});
+
+                const novoParagrafo = document.createElement('p');
+
+                const texto = document.createTextNode('Este é um parágrafo novo!');
+
+                novoParagrafo.append(texto);
+                document.body.append(novoParagrafo);
+
+                const titulo = document.querySelector('h2');
+                titulo.textContent = 'bem vindo a forma segura de manipular DOM'
+
+                novoParagrafo.remove();
+
+            </script>
+    </main>
+</body>
 </html>
