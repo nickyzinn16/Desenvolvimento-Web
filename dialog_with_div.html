@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dialog</title>
+</head>
+<body>
+    <div>
+        <button id="openDialog">Inscrever-se</button>
+         
+        <!--Area que contem o dialogo, permitindo a implementacao de um efeito ilusao temporario-->
+        <div id="overlayArea" class="overlay-area hiden">
+            <!--Area principal do dialogo-->
+            <div class="dialog">
+                <!--Cabecalho do dialogo-->
+                <div class="dialog-header">
+                <h2>Pré-inscrição no curso</h2>
+                <button id="closeDialog" class="close-btn">&times;</button>
+                </div>
+                <!--Corpo do dialogo-->
+                <div class="dialog-body">
+                <p>Realize a sua inscrição para ser um dos Asibedianos e um agente da transformação digital do Tubarão Azul</p>
+                </div>
+                <!--Footer do dialogo-->
+                <div class="dialog-footer">
+                    <button id="sendBtn">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <sricpt src="script.js"></sricpt>
+</body>
+</html>

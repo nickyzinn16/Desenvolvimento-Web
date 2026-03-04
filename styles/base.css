@@ -306,8 +306,8 @@ background-color: #f2f2f2;
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: none;
-    color: black;
+    background-color: black;
+    color: white;
     font-family: Arial, Helvetica, sans-serif;
     word-spacing: 10px;
     margin-bottom: 70px; 
@@ -319,7 +319,7 @@ background-color: #f2f2f2;
 }
 
 .submenu li a {
-    color: black;
+    color: white;
     display: block;
     font-size: 88px; 
 }
@@ -327,4 +327,6 @@ background-color: #f2f2f2;
 .link-holder:hover .submenu {
     display: block;
     z-index: 10;
+    transition: opacity 0.3 ease;
 }
+
