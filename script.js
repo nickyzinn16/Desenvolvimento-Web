@@ -19,7 +19,12 @@ closeBtn.addEventListener("click", closeDialog);
 
 
 overlayArea.addEventListener("click", function (event) {
-    if (event.target == overlayArea) {
+    if (event.target === overlayArea) {
         closeDialog();
     }
 })
+
+sendBtn.addEventListener("click", function() {
+    alert("Inscrição feita");
+    closeDialog();
+});
