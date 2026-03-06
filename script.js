@@ -28,3 +28,7 @@ sendBtn.addEventListener("click", function() {
     alert("Inscrição feita");
     closeDialog();
 });
+
+cancelBtn.addEventListener("click", function() {
+    closeDialog();
+});

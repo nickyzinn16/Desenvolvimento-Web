@@ -62,7 +62,15 @@ body {
     }
 }
 
-/* boao enviar na direita 
-botao cancelar a esquerda vermelho
-e colocar a funcionar
-*/
+#cancelBtn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#cancelBtn:hover {
+    background-color: #c82333;
+}

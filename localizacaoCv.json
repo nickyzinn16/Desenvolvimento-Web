@@ -1,0 +1,28 @@
+{
+    "pais": "Cabo Verde",
+        "ilhas": [
+            {  
+                "nome": "Sao Vicente",
+                "concelhos": [
+                    {
+                        "nome": "Mindelo",
+                        "Freguesia": [
+                            {
+                                "nome": "Nossa Senhora da Luz",
+                                "zonas": ["Dji d' Sal","Campim",
+                                        "Monte",
+                                        "Monte Sossego",
+                                        "Morada",
+                                        "Pedra Rolada",
+                                        "Salamansa",
+                                        "Tras cemiterio",     
+                                        "Praca e estrela"
+                                    ]
+                            }
+                        ]
+                    }
+                ]
+
+            }
+        ]
+ }
