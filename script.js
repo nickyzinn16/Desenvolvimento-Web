@@ -3,6 +3,7 @@ const openBtn = document.querySelector("#openDialog");
 const closeBtn = document.querySelector("#closeDialog");
 const overlayArea = document.querySelector("#overlayArea");
 const sendBtn = document.querySelector("#sendBtn");
+const cancelBtn = document.querySelector("#cancelBtn");
 
 // Funcoes da interacao
 function openDialog(){

@@ -1,7 +1,7 @@
 const event= {
   title: 'Conferência Web',
   date: new Date('2026-05-20'),
-  local: 'Sºao Vicente',
+  local: 'Sao Vicente',
   toJSON() {
     return {
       title: this.title,

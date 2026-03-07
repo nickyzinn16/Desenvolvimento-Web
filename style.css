@@ -38,6 +38,13 @@ body {
     padding: 20px;
 }
 
+.dialog-footer {
+    padding: 15px;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: space-between;
+}
+
 .close-btn {
     border: none;
     background-color: transparent;
@@ -62,7 +69,16 @@ body {
     }
 }
 
-#cancelBtn {
+.sendBtn {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.cancelBtn {
     background-color: red;
     color: white;
     border: none;
@@ -71,6 +87,6 @@ body {
     cursor: pointer;
 }
 
-#cancelBtn:hover {
+.cancelBtn:hover {
     background-color: #c82333;
 }
